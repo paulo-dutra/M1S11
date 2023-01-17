@@ -7,6 +7,7 @@ import { NavbarComponent } from './ex2/navbar/navbar.component';
 import { CardComponent } from './ex3/card/card.component';
 import { DemoModalComponent } from './ex4/demo-modal/demo-modal.component';
 import { ModalContentComponent } from './ex5/modal-content/modal-content.component';
+import { CardNgcontentComponent } from './ex6/card-ngcontent/card-ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ModalContentComponent } from './ex5/modal-content/modal-content.compone
     NavbarComponent,
     CardComponent,
     DemoModalComponent,
-    ModalContentComponent
+    ModalContentComponent,
+    CardNgcontentComponent
   ],
   imports: [
     BrowserModule

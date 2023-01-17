@@ -1,0 +1,4 @@
+.card {
+    color: var(--bs-primary-bg-subtle);
+    background-color: var(--bs-info-text);
+}
