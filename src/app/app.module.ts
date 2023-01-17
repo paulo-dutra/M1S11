@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CaptalizePhilipsPipe } from './ex1/pipes/captalize-philips.pipe';
@@ -9,6 +10,7 @@ import { DemoModalComponent } from './ex4/demo-modal/demo-modal.component';
 import { ModalContentComponent } from './ex5/modal-content/modal-content.component';
 import { CardNgcontentComponent } from './ex6/card-ngcontent/card-ngcontent.component';
 import { ExemploIfelseComponent } from './ex7/exemplo-ifelse/exemplo-ifelse.component';
+import { ListaTarefasComponent } from './ex8/lista-tarefas/lista-tarefas.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { ExemploIfelseComponent } from './ex7/exemplo-ifelse/exemplo-ifelse.comp
     DemoModalComponent,
     ModalContentComponent,
     CardNgcontentComponent,
-    ExemploIfelseComponent
+    ExemploIfelseComponent,
+    ListaTarefasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

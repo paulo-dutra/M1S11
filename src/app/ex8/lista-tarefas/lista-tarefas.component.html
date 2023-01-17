@@ -1,0 +1,23 @@
+<header style="background-color: var(--bs-secondary-bg);">
+    <div class="container pt-5 d-flex flex-column align-items-center">
+        <div style="width: 28rem;">
+            <label for="tarefa" class="form-label">Insira uma tarefa:</label>
+            <input [(ngModel)]="novaTarefa" type="text" class="form-control" name="tarefa" id="tarefa" #inputTarefa>
+        </div>
+        <button (click)="cadastrarTarefa()" type="button" style="width: 8rem;" class="btn btn-primary my-3">Adicionar</button>
+    </div>
+    <hr>
+</header>
+<div class="container text-center mt-5">
+    <h3>Lista de Tarefas</h3>
+    <div class="d-flex justify-content-center mt-5">
+        <p *ngIf="tarefas.length === 0;else listaTarefas" >Não há nenhuma tarefa cadastrada no momento!</p>
+        <ng-template #listaTarefas>
+<ul>
+    <li *ngFor="let tarefa of tarefas">
+        {{tarefa}}
+    </li>
+</ul>
+        </ng-template>
+    </div>
+</div>
