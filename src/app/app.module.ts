@@ -6,6 +6,7 @@ import { CaptalizePhilipsPipe } from './ex1/pipes/captalize-philips.pipe';
 import { NavbarComponent } from './ex2/navbar/navbar.component';
 import { CardComponent } from './ex3/card/card.component';
 import { DemoModalComponent } from './ex4/demo-modal/demo-modal.component';
+import { ModalContentComponent } from './ex5/modal-content/modal-content.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DemoModalComponent } from './ex4/demo-modal/demo-modal.component';
     CaptalizePhilipsPipe,
     NavbarComponent,
     CardComponent,
-    DemoModalComponent
+    DemoModalComponent,
+    ModalContentComponent
   ],
   imports: [
     BrowserModule
