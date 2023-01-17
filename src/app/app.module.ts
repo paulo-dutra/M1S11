@@ -8,6 +8,7 @@ import { CardComponent } from './ex3/card/card.component';
 import { DemoModalComponent } from './ex4/demo-modal/demo-modal.component';
 import { ModalContentComponent } from './ex5/modal-content/modal-content.component';
 import { CardNgcontentComponent } from './ex6/card-ngcontent/card-ngcontent.component';
+import { ExemploIfelseComponent } from './ex7/exemplo-ifelse/exemplo-ifelse.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardNgcontentComponent } from './ex6/card-ngcontent/card-ngcontent.comp
     CardComponent,
     DemoModalComponent,
     ModalContentComponent,
-    CardNgcontentComponent
+    CardNgcontentComponent,
+    ExemploIfelseComponent
   ],
   imports: [
     BrowserModule

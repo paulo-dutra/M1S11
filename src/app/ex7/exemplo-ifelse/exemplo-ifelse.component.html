@@ -1,0 +1,19 @@
+<div class="container mt-5 d-flex justify-content-center">
+    <form (submit)="envioForm($event)" style="width: 28rem;">
+        <div>
+            <label for="senha" class="form-label">Insira uma senha com pelo menos 8 caracteres:</label>
+            <input type="password" class="form-control" name="senha" id="senha">
+        </div>
+        <div *ngIf="ativarHelper" class="form-text">
+            <p *ngIf="senhaOk; else templateElse" style="color: green;">
+                Senha aceita.
+            </p>
+            <ng-template #templateElse>
+                <p style="color: red;">A senha deve conter pelo menos 8 caracteres!</p>
+            </ng-template>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" style="width: 8rem;" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
